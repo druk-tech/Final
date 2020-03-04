@@ -1,0 +1,34 @@
+
+<div class="main">
+  <p class="sign" align="center">SignUp</p>
+  <form class="form1" [formGroup]="signUpForm">
+
+    <input type="text"
+           class="un"
+           formControlName="username"
+           placeholder="Enter username">
+
+    <input type="text"
+           class="un"
+           formControlName="contact"
+           placeholder="Enter Contact">
+
+    <input type="email"
+           class="un"
+           formControlName="email"
+           placeholder="Enter email">
+
+    <input type="text"
+           class="un"
+           formControlName="role"
+           placeholder="user">
+
+    <input type="password"
+           class="pass"
+           formControlName="password"
+           placeholder="Password">
+
+    <button class="submit" (click)="submit()">Sign Up</button>
+  </form>
+</div>
+<app-home></app-home>
