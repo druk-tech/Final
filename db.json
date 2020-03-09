@@ -1,0 +1,193 @@
+{
+  "users": [
+    {
+      "username": "superAdmin",
+      "contact": "17348537",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "permissionAccess": true,
+      "id": 1
+    },
+    {
+      "username": "tashi",
+      "contact": "17348537",
+      "email": "tashi@gmail.com",
+      "password": "tashi123",
+      "role": "user",
+      "permissionAccess": true,
+      "id": 2
+    },
+    {
+      "username": "ghkj",
+      "contact": "kj",
+      "email": "lk",
+      "password": "kj",
+      "role": "jll",
+      "permissionAccess": false,
+      "id": 3
+    },
+    {
+      "username": "jnjk",
+      "contact": "jk",
+      "email": "kj",
+      "password": "jnj",
+      "role": "kjjn",
+      "permissionAccess": false,
+      "id": 4
+    },
+    {
+      "username": "jkjk",
+      "contact": "k",
+      "email": "mm",
+      "password": "kmkm",
+      "role": "nkm",
+      "permissionAccess": false,
+      "id": 5
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 6
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 7
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 8
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 9
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 10
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 11
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 12
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 13
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 14
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 15
+    },
+    {
+      "username": "",
+      "contact": "",
+      "email": "",
+      "password": "",
+      "role": "",
+      "permissionAccess": false,
+      "id": 16
+    },
+    {
+      "username": "kinga Pema",
+      "contact": "123456",
+      "email": "kinga@gmail.com",
+      "password": "kinga123",
+      "role": "user",
+      "permissionAccess": true,
+      "id": 17
+    },
+    {
+      "username": "tashi dhendup",
+      "contact": "dhendup",
+      "email": "tashi@gmail.com",
+      "password": "tashi123",
+      "role": "user",
+      "permissionAccess": true,
+      "id": 18
+    },
+    {
+      "username": "tashi",
+      "contact": "1234",
+      "email": "tashi@gmail.com",
+      "password": "t123",
+      "role": "admin",
+      "permissionAccess": false,
+      "id": 19
+    },
+    {
+      "username": "jjhsakjhjkh",
+      "contact": "jk",
+      "email": "hlkj",
+      "password": "tashi123",
+      "role": "user",
+      "permissionAccess": false,
+      "id": 20
+    },
+    {
+      "username": "towli",
+      "contact": "1234",
+      "email": "towli@gmail.com",
+      "password": "towli123",
+      "role": "user",
+      "permissionAccess": true,
+      "id": 21
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {HomeService} from '../home.service';
+import {Router} from '@angular/router';
+import {BehaviorSubject} from 'rxjs';
+import {SharedService} from "../../Shared/shared.service";
 
 @Component({
   selector: 'app-log-in',
@@ -9,7 +13,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class LogInComponent implements OnInit {
   logInForm: FormGroup;
   error = false;
-  constructor(private fb: FormBuilder) { }
+  success = false;
+  constructor(private fb: FormBuilder, private homeService: HomeService, private router: Router) { }
 
   ngOnInit(): void {
     this.buildLogInForm();
@@ -17,8 +22,25 @@ export class LogInComponent implements OnInit {
   buildLogInForm() {
     this.logInForm = this.fb.group({
       email: [undefined, Validators.required],
-      password: [undefined, Validators.required, Validators.minLength(6)]
+      password: [undefined]
     });
+  }
+  login() {
+    this.homeService.getUsers().subscribe((respond: Array<any>) => {
+      const usersFromDataBase = respond;
+      const user = usersFromDataBase.filter( data => data.email === this.logInForm.value.email
+        && data.password === this.logInForm.value.password
+        && data.permissionAccess) ;
+      if (user.length) {
+        localStorage.setItem('token', JSON.stringify(user[0]));
+        this.success = true;
+        setTimeout( () => this.router.navigate([`/${user[0].role}`]), 500);
+      } else  {
+        this.error = true;
+      }
+
+    });
+
   }
   get email() {
     return this.logInForm.get('email');
@@ -26,4 +48,5 @@ export class LogInComponent implements OnInit {
   get password() {
     return this.logInForm.get('password');
   }
+
 }

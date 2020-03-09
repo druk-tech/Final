@@ -29,6 +29,9 @@
            placeholder="Password">
 
     <button class="submit" (click)="submit()">Sign Up</button>
+    <div *ngIf="success" class="login">
+      Signed In successfully!
+    </div>
   </form>
 </div>
 <app-home></app-home>

@@ -7,6 +7,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import {HomeComponent} from './home.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {HomeService} from './home.service';
+
 
 
 @NgModule({
@@ -22,6 +24,6 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-
+  providers: [HomeService],
 })
 export class HomeModule { }
